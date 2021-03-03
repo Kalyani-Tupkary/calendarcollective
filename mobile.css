@@ -1,0 +1,406 @@
+body {
+
+    font-family: IBM Plex Mono;
+    cursor: url('cursor.png');
+   
+    
+}
+
+
+
+::-webkit-scrollbar {
+    width: 0px;  
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+#container {
+    border: 1px solid black;
+    /* height:100vh; */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* COLUMNS */
+
+#leftColumn {
+ 
+    /* display: inline-block; */
+   
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    
+    
+}
+
+#rightColumn {
+    position: relative;
+    width: 100%;
+
+}
+
+/* .scrollableContent p {
+    margin: 16px 16px;
+} */
+
+
+
+/* LEFT COLUMN CONTENTS */
+
+.infoSection h3 {
+
+    font-family: IBM Plex Mono SemiBold;
+    font-size: 17pt;
+    padding: 0 0 0 10%;
+    
+
+}
+
+p {
+    font-size: 12pt;
+}
+
+.infoSection {
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 19vh;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+}
+
+.callTop {
+    display:none;
+}
+
+.callBottom {
+    border-left:1px solid black;
+    border-right: 1px solid black;
+}
+
+
+
+.moreInfo {
+   
+    display: flex;
+    align-items: center;
+    padding:60px 8% ;
+    line-height: 1.4;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: none;
+
+}
+p {
+    margin-bottom:0px;
+}
+
+
+
+
+.arrowLeft {
+    position: absolute;
+    right: 40px;
+    top:20px;
+    cursor:pointer;
+    display: none;
+}
+
+.arrowRight {
+    position: absolute;
+    left:0px;
+    top:20px;
+    cursor: pointer;
+    display:none;
+}
+
+.calendar {
+    /* display: flex; */
+    position: relative;
+    width:100%;
+     border-bottom: 1px solid black;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    
+}
+
+.overview {
+
+    background-color: white;
+    padding:16px;
+
+   
+}
+
+.overview img {
+     /* max-height:100%; */
+    width:100%;
+    height: auto;
+  
+}
+
+.overview > .txtContainer {
+    margin: 16px 0;
+     
+}
+
+
+
+.txtContainer p {
+    /* posi tion: absolute;
+    bottom:0; */
+    margin-top:auto;
+    width:inherit;
+    /* transform: translateY(-100%); */
+  
+
+}
+
+
+#play {
+    position: fixed;
+    bottom:16px;
+    right:30px;
+    width: 24px;
+    z-index:2000;
+    cursor: pointer;
+}
+
+#close {
+    position: fixed;
+    bottom:16px;
+    right:30px;
+    width: 24px;
+    z-index:3000;
+    cursor: pointer;
+}
+
+#videoOverlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color:RGBA(0,0,0,0.95);
+    z-index:1200;
+    overflow: hidden;
+
+    
+}
+
+#videoOverlay div {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#videoOverlay iframe {
+    position:relative;
+    text-align: center;
+  
+}
+
+#videoOverlay p {
+    margin-top:20px;
+    text-align: center;
+    font-size: 8pt;
+    color:white;
+  
+
+  
+}
+
+
+
+.overview img {
+    margin-top:20px;
+}
+
+.desktopBreak {
+    display:none;
+}
+
+#backArrow {
+    position: fixed;
+    top:16px;
+    left:16px;
+    z-index:100;
+}
+
+/* wavy underlines */
+
+.voicemailPlay {
+    border-bottom: 1px solid #000;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+
+.playing {
+  
+  padding-bottom: 5px;
+  background: url("images/wavy.svg");
+  background-repeat: repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+  background-repeat: repeat-x;
+  background-size: 15px 5px; 
+  background-position: 2px 19px;
+  animation: move 15s linear infinite;
+  -webkit-animation: move 15s linear infinite;
+  animation-play-state: running;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  cursor: pointer;
+
+  border-bottom: none;
+    padding-bottom: 4px;
+
+  
+}
+
+@-webkit-keyframes move {
+from {
+    background-position: 2px 19px;
+  }
+  to {
+    background-position: 500px 19px;
+  }
+}
+
+@keyframe move {
+from {
+    background-position: 2px 19px;
+  }
+  to {
+    background-position: 500px 19px;
+  }
+}
+
+/* /wavy underlines */
+
+
+
+#voicemailOverlay {
+    color:white;
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color:RGBA(0,0,0,0.95);
+    z-index:1200;
+    overflow: hidden;
+    z-index: 5000;
+    
+}
+
+#voicemailOverlay div {
+    width: 40%;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+
+}
+
+#moreButton {
+    position:absolute;
+    top:10px;
+}
+
+
+
+#arrows {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:3px;
+    z-index:6000;
+    cursor: pointer;
+}
+
+
+
+.infoContainer {
+    /* padding:64px; */
+    border:1px solid red;
+    height: 100%;
+  
+}
+
+
+
+.scrollableContent {
+    padding:16px;
+    display:none;
+}
+
+.show {
+    display:block;
+}
+    .scrollableContent * {
+    margin: 20px 0;
+
+    }   
+
+    .scrollableContent img {
+        width:100%;
+        height:auto;
+        
+    }
+
+    .scrollableContent a {
+        color:black;
+        text-decoration: underline;
+    }
+
+    .expand{
+        
+        border-bottom: 1px solid #000;
+        
+       
+    }
+
+
+
+
+
+
+@media (min-width: 992px) {
+  .container-scroll > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .container-scroll > .row > .col-md-4 {
+    display: inline-block;
+    float: none;
+  }
+}
+
+.container-scroll > .row {
+  /* margin-top: 24px; */
+  height:100vh;
+}
+.container-scroll > .row > .col-md-4 {
+  font-weight: bold;
+  text-align: center;
+}
+

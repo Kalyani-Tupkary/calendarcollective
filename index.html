@@ -1,0 +1,533 @@
+<!-- for adding breaks on desktop -->
+<!-- <span class="desktopBreak"><br /><br /></span> -->
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Calendar Collective</title>
+    <meta
+      name="description"
+      content="Calendar Collective is a living archive of alternate calendars."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 0px) and (max-width: 1000px)"
+      href="mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1001px)"
+      href="style.css"
+    />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    
+
+    <!-- CONTAINER START -->
+    <div id="container">
+
+      <img src="images/play.png" id="play" class="overlaying" />
+
+      <div id="videoOverlay">
+        <div>
+          <iframe
+            src="https://player.vimeo.com/video/416958924"
+            width="1254"
+            height="706"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+          <p>Project by <a href="#">Kalyani Tupkary</a>. Website built by <a href="#">Jon Packles</a>.</p>
+        </div>
+      </div>
+
+      <!-- LEFT COLUMN START -->
+      <div id="leftColumn">
+        <div>
+          <div class="infoSection">
+            <h3>Calendar Collective</h3>
+          </div>
+          <div class="moreInfo">
+            <p>
+              Calendar Collective is a living archive of alternate calendars. It
+              is an ongoing investigation for collecting, cataloguing and
+              publishing calendars that are little-known to our world. We use
+              openly contributed voicemails as are our unique research material.
+              The archive offers an uncommon collection of calendars traced
+              through these unwritten and slightly incongruous fragments.
+            </p>
+          </div>
+        </div>
+        <div class="callTop">
+          <div class="infoSection">
+            <h3>Call for Contribution</h3>
+          </div>
+          <div class="moreInfo">
+            <p>
+              We are open most days about midday, seldom as early as the
+              daybreak, some days as late as dusk. We close about when the sun
+              goes down or twilight and occasionally at midnight but sometimes
+              even beyond midnight. Some days we are not here at all, but
+              lately, we are here most of the time except when we are somewhere
+              else. So, if you would like to contribute, please leave a voicemail at (646) 371-5045.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- LEFT COLUMN END -->
+
+
+      <!-- RIGHT COLUMN START -->
+      <div id="rightColumn">
+        
+        <!-- MOON -->
+        <div class="calendar">
+          <div class="overview">
+              
+            <img src="images/calendars/Moon.jpg" alt="Moon" />
+
+            <div class="txtContainer" id="testtext">
+              <p>
+                Here the night is variable. It fluctuates with the phases of the
+                moon. Some nights are short while others long. <br /><br />
+                <span class="voicemailPlay">Listen to the Voicemail</span
+                ><audio
+                  onended="audioEnded(this)"
+                  src="audio/Moon_Jon.m4a"
+                ></audio>
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <!-- /MOON -->
+
+        <!-- SUN -->
+        <div class="calendar">
+          <div class="overview">
+            <img src="images/calendars/Sun.gif" alt="Moon" />
+
+            <div class="txtContainer" id="testtext">
+              <p>
+                Here the length of the day is attuned to the sunlight.The day is
+                as large as the sunlight one gets. <br /><br />
+                <span class="voicemailPlay">Listen to the Voicemail</span
+                ><audio
+                  onended="audioEnded(this)"
+                  src="audio/Sun_Cassandra.m4a"
+                ></audio>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /SUN -->
+
+        <!-- COLOUR -->
+        <div class="calendar" name="colour">
+          <div class="overview">
+            <img src="images/calendars/Colour.gif" alt="Moon" />
+
+            <div class="txtContainer">
+              <p>
+                Here a day is 24 hours long. But some hours are more colorful
+                than others. <br /><br />
+                <span class="voicemailPlay">Listen to the Voicemail</span
+                ><audio
+                  onended="audioEnded(this)"
+                  src="audio/Colour_Kari.m4a"
+                ></audio>
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <!-- /COLOUR -->
+
+        <!-- FLOWER -->
+        <div class="calendar">
+          <div class="overview">
+            <img src="images/calendars/Flower.jpg" alt="Moon" />
+
+            <div class="txtContainer" id="testtext">
+              <p>
+                Here time blooms and withers with opening and closing of
+                flowers. <br /><br />
+                <span class="voicemailPlay">Listen to the Voicemail</span
+                ><audio
+                  onended="audioEnded(this)"
+                  src="audio/Flower_Elena.m4a"
+                ></audio>
+              </p>
+             
+
+            </div>
+          </div>
+        </div>
+        <!-- /FLOWER -->
+
+        <!-- DRIFT -->
+        <div class="calendar">
+          <div class="overview">
+            <img src="images/calendars/Drift.gif" alt="Moon" />
+
+            <div class="txtContainer" id="testtext">
+              <p>
+                Here time is aligned on the first day of the week. Then it
+                begins to drift away in no fixed order or direction, until the
+                start of the next week when it is aligned again. <br /><br />
+                <span class="voicemailPlay">Listen to the Voicemail</span
+                ><audio
+                  onended="audioEnded(this)"
+                  src="audio/Drift_Sukanya.m4a"
+                ></audio>
+              </p>
+
+              <!-- <p class="listen">Listen to the voicemail</p> -->
+            </div>
+          </div>
+        </div>
+        <!-- /DRIFT -->
+
+        <!-- FIXED -->
+        <div class="calendar">
+          <img class="arrowLeft" src="images/arrow.svg" />
+
+          <div class="overview">
+            <img src="images/calendars/Fixed.jpg" alt="Moon" />
+
+            <div class="txtContainer" id="testtext">
+              <p>
+                Here every year is the same - with 13 months of 28 days each.
+                Every date is fixed to the same weekday. So, the 17th is always
+                a Tuesday. <br /><br />
+                <span class="voicemailPlay">Listen to the Voicemail</span
+                ><audio
+                  onended="audioEnded(this)"
+                  src="audio/Fixed_Natalie.m4a"
+                ></audio>
+                <span class="expand"><br /><br />More →</span>
+              </p>
+
+              <!-- <p class="listen">Listen to the voicemail</p> -->
+            </div>
+          </div>
+
+          <div class="scrollableContent">
+            <img class="arrowRight" src="images/arrowright.svg" />
+
+            <div class="infoText">
+              <p>
+                In a scalding-hot argument against the 12-month calendar, a
+                September 1927 issue of The Outlook proclaimed: 'A month is a
+                wholly irrational division of time. It has no relation to
+                anything in astronomy, or human experience. It is an inaccurate
+                and varying measure of time that is a constant annoyance in
+                business and a misleading unit in science. It has no religious
+                significance. A month is nothing but just a bad habit.'
+                <br /><br /> 
+                The International Fixed Calendar is a
+                <a
+                  href="https://en.wikipedia.org/wiki/Solar_calendar"
+                  target="”_blank”"
+                  >solar calendar</a
+                >
+                with 13 months of 28 days each. It is a
+                <a
+                  href="https://en.wikipedia.org/wiki/Perennial_calendar"
+                  target="”_blank”"
+                  >perennial calendar</a
+                >
+                as every date is fixed to the same weekday every year. Momentum
+                behind the International Fixed Calendar, a 13-month calendar
+                with 28 days in each month and a leftover day at the end of each
+                year (it also followed the Gregorian rules with regards to Leap
+                Years), was never stronger than in the late 1920s. Similar to
+                Auguste Comte's
+                <a
+                  href="https://en.wikipedia.org/wiki/Positivist_calendar"
+                  targer="_blank"
+                  >positivist calendar</a
+                >
+                (created in 1849), this particular 13-month invention came from
+                the mind of Moses Cotsworth, a North Eastern Railway advisor
+                bothered by inexplicably varying monthly earnings over the
+                traditional 12-month period. In 1902, driven by a desire to
+                simplify the ‘irrational calendar’ Moses B Cotsworth presented a
+                solar calendar for calendar reform. His solar calendar had 13
+                months of 28 days each. Every date was fixed to the same weekday
+                every year. Every week starts with a Sunday and ends with a
+                Saturday. Cotsworth's plan quickly gained popularity among
+                businessmen, especially in transportation and logistics. His
+                biggest ally, however, was photography pioneer and Kodak
+                founder, George Eastman. Impressed by the symmetry of this
+                hyper-rational calendar, George Eastman adopted it for use in
+                his Eastman Kodak Company 1928 to 1989 while the rest of the
+                world followed the Gregorian calendar.
+              </p>
+            </div>
+
+            <img src="images/calendars/Fixed_01.jpg" alt="" />
+            <img src="images/calendars/Fixed 02.png" alt="" />
+            <img src="images/calendars/Fixed_03.png" alt="" />
+            <img src="images/calendars/Fixed 04.jpg" alt="" />
+
+            <div class= "infoText">
+              <ul class = "references">
+                <li>Image 1: The 13-month calendar as used by Kodak in 1928 and 1989. Courtesy the George Eastman House</li>
+                <li>Image 2, 3: A 1927 issue of "The Outlook" compares the Gregorian calendar to the International Fixed Calendar. Courtesy George Eastman House</li>
+                <li>Image 3: Col. Henry Stimson (left) holds the report of the National Committee on Calendar Simplification while standing next to George Eastman on August 14, 1929. AP, George Eastman House</li>
+                <li>Reference: Byrnes2014, Mark. “The Death and Life of the 13-Month Calendar.” Bloomberg.com. Bloomberg. Accessed December 6, 2020.
+https://www.bloomberg.com/news/articles/2014-12-11/the-death-and-life-of-the-13-month-calendar.</li>
+              </ul>
+              
+            </div>
+
+
+          </div>
+        </div>
+        <!-- /FIXED -->
+
+        <!-- EVEN -->
+        <div class="calendar">
+          <div class="overview">
+            <img src="images/calendars/Odd.jpg" alt="Moon" />
+
+            <div class="txtContainer" id="testtext">
+              <p>
+                Here one is either an Even or an Odd. Evens are born on Even
+                days. They work on Even days and rest on Odd days. Odds do the
+                opposite. But Evens get an additional holiday at the year end.
+                <br /><br />
+                <span class="voicemailPlay">Listen to the Voicemail</span
+                ><audio
+                  onended="audioEnded(this)"
+                  src="audio/Even_Odd_Vishakha.m4a"
+                ></audio>
+              </p>
+
+              <!-- <p class="listen">Listen to the voicemail</p> -->
+            </div>
+          </div>
+        </div>
+        <!-- /EVEN -->
+
+        <!-- DECIMAL -->
+        <div class="calendar">
+          <img class="arrowLeft" src="images/arrow.svg" />
+
+          <div class="overview">
+            <img src="images/calendars/Decimal.jpg" alt="Moon" />
+
+            <div class="txtContainer" id="testtext">
+              <p>
+                Here a year has only weeks. Each week with 10 days. Every day
+                lasts for 10 hours with 100 minutes in an hour and 100 seconds
+                in a minute. <br /><br />
+                <span class="voicemailPlay">Listen to the Voicemail</span
+                ><audio
+                  onended="audioEnded(this)"
+                  src="audio/Decimal_Kari.m4a"
+                ></audio>
+              </p>
+
+              <!-- <p class="listen">Listen to the voicemail</p> -->
+            </div>
+          </div>
+
+          <div class="scrollableContent">
+            <img class="arrowRight" src="images/arrowright.svg" />
+
+            <div class="infoText">
+              <p>
+                The French Republican Revolutionary Calendar established a new
+                timekeeping system from 1793 until 1806. “This was introduced
+                not to correct some astronomical discrepancy but to mark a break
+                with the past. The Church, the guardian of the calendar with its
+                feasts and fasts and saints’ days was one of the sources of
+                power of the hated ancient order; it had to be done away with.”1
+                It employed ‘decimal time’ in order to be rational (in contrast
+                to religious “irrationality”), and parallel the metric system.
+                Using metric time was a proclamation that all Frenchmen became
+                equal. A year had 12 months of 30 days each with 5 days at the
+                year-end. Hence its power lay in its symbolic value rather than
+                practical purpose. A leap year was to have an extra intercalary
+                day. Months were standardized into three equal decades of 10
+                days each, each day was divided into 10 hours, hours into 100
+                minutes, and minutes into 100 seconds. This period also saw
+                watchmakers build decimal clocks and watches. “Despite its
+                revolutionary symbolism, the new calendar turned out to be
+                unpopular and inconvenient. The French workman objected to
+                working a 10-day week; most people objected to working on
+                Sundays; the decimal hours caused intolerable confusion;
+                business with the rest of Europe (still adhering to the
+                Gregorian calendar) became difficult. As revolutionary fervour
+                ebbed away, the provisions of the calendar were gradually
+                repealed. In September 1805, Sunday was restored as the day of
+                rest, and from 1 January 1806, the Gregorian calendar was
+                reinstated.”
+              </p>
+            </div>
+
+            <img src="images/calendars/French_01.jpg" alt="" />
+            <img src="images/calendars/French_02.jpg" alt="" />
+            <div class= "infoText">
+              <ul class = "references">
+                <li>Image 1: Clock dial displaying both decimal (inside the circle) and duodecimal time (on the outer rim)</li>
+                <li>Image 2: The French Republican Calendar</li>
+                <li>Reference: Richards, E. G. Mapping Time: The Calendar and Its History. New York: Oxford University Press, 1999.</li>
+              </ul>
+              
+            </div>
+            
+          </div>
+        </div>
+        <!-- /DECIMAL -->
+
+        <!-- RUSSIAN -->
+        <div class="calendar">
+          <img class="arrowLeft" src="images/arrow.svg" />
+
+          <div class="overview">
+            <img src="images/calendars/Russian.gif" alt="Moon" />
+
+            <div class="txtContainer" id="testtext">
+              <p>
+                Here every month looks different - an arbitrary arrangement of
+                five types of days. One such day is a personal day of pause.
+                <br /><br />
+                <span class="voicemailPlay">Listen to the Voicemail</span
+                ><audio
+                  onended="audioEnded(this)"
+                  src="audio/Russian_Automated.m4a"
+                ></audio>
+              </p>
+
+              <!-- <p class="listen">Listen to the voicemail</p> -->
+            </div>
+          </div>
+
+          <div class="scrollableContent">
+            <img class="arrowRight" src="images/arrowright.svg" />
+
+            <div class="infoText">
+              <p>
+                It was in May of 1929, at the fifth Congress of the Soviets of
+                the Union, that it was proposed to alter the existing work-week
+                in order to utilize expensive machinery in the factories more
+                effectively and so raise productivity. The proposer, Larin,
+                managed to interest Stalin in the project and on 26 August of
+                the same year, the Council of People's Commissaries announced
+                that the old work-week would be abolished and be replaced by a
+                continuous production week known as 'nepreryvka'. A decree of 24
+                September modified the proposal by replacing the seven­day cycle
+                with a five ­day one. The workers were issued with coloured
+                slips of paper to tell them which day to take off: yellow,
+                orange, red, purple, and green. They were to observe a day off
+                on the day that fell on their colour.
+
+                <br /><br />
+                While it did increase productivity as intended (80 per cent of
+                the country was working at any given time), it disrupted social
+                system by segregating families and friends, workers were
+                demoralized, and machines could not be routinely maintained.
+                However, there were two main disadvantages to nepreryvka. First,
+                it had a profound, disruptive, and unwelcome effect on family
+                and social life; members of the same family, friends, or
+                marriage partners, who had been given different colours.
+                Although the Soviet workers got more time off than then Western
+                counterparts they were rarely able to spend time together.
+              </p>
+            </div>
+
+        
+            <img src="images/calendars/Russian_01.jpg" alt="" />
+       
+            <img src="images/calendars/Russian_02.png" alt="" />
+           
+            <img src="images/calendars/Russian_03.jpg" alt="" />
+        
+            
+                        <div class= "infoText">
+              <ul class = "references">
+                <li>Image 1: Calendar for 1929–1930 showing rest days for each of the five worker groups, designated here by different colors. In
+                            this version of nepreryvka, the continuous workweek, workers had every fifth day off.</li>
+                <li>Image 2: Left- The month of April from a 1931 worker’s pocket calendar. Here, the five different work groups are represented by
+                            five symbols—a sheaf of wheat, a red star, the hammer and sickle, a book, and a budenovka, or wool military cap.
+                            Courtesy Erast Butakov. Right- The month of July from the same 1931 worker’s pocket calendar. Here, the five different work groups are
+                            represented by five symbols—a sheaf of wheat, a red star, the hammer and sickle, a book, and a budenovka, or wool
+                            military cap. Courtesy Erast Butakov.</li>
+                <li>Image 3: Calendar for 1929–1930 showing rest days for each of the five worker groups, designated here by different colors. In this version of nepreryvka, the continuous workweek, workers had every fifth day off.</li>
+                <li>Courtesy of <a href="https://cabinetmagazine.org/issues/61/wood.php">Tony Wood</a></li>
+              </ul>
+              
+            </div>
+
+          </div>
+        </div>
+        <!-- /RUSSIAN -->
+
+
+      </div> <!-- RIGHT COLUMN END -->
+
+
+    </div> <!-- CONTAINER END -->
+
+    <div class="callBottom">
+      <div class="infoSection">
+        <h3>Call for Contribution</h3>
+      </div>
+      <div class="moreInfo">
+        <p>
+          We are open most days about midday, seldom as early as the daybreak,
+          some days as late as dusk. We close about when the sun goes down or
+          twilight and occasionally at midnight but sometimes even beyond
+          midnight. Some days we are not here at all, but lately, we are here
+          most of the time except when we are somewhere else. So, if you would
+          like to contribute, please
+          <span id="leaveVoicemail">leave us a voicemail</span>.
+        </p>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js'></script> -->
+
+    <script>
+      if (screen && screen.width > 1000) {
+        document.write(
+          '<script type="text/javascript" src="main.js"><\/script>'
+        );
+      } else {
+        document.write(
+          '<script type="text/javascript" src="mobile.js"><\/script>'
+            
+        );
+      }
+    </script>
+  </body>
+</html>
