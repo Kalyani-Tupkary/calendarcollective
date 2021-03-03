@@ -12,6 +12,8 @@ $(document).ready(function(){
         $(this).closest('.txtContainer').siblings('.scrollableContent').slideToggle('fast');
     });
 
+    $('iframe').attr('width',500);
+    
 
     $('#play').click(function () {
         $("#videoOverlay").fadeToggle('slow');

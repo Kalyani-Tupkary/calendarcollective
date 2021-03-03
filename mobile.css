@@ -380,6 +380,15 @@ from {
     }
 
 
+.scrollableContent a, .scrollableContent a:hover {
+    color:black;
+    text-decoration: none;
+}
+
+#videoOverlay a, #videoOverlay a:hover {
+    color:white;
+    text-decoration: underline;
+}
 
 
 
