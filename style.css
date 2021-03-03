@@ -45,7 +45,8 @@ body {
 /* LEFT COLUMN CONTENTS */
 .infoSection h3 {
 
-    font-family: IBM Plex Mono SemiBold;
+    font-family: IBM Plex Mono;
+    font-weight: 600;
     font-size: 17pt;
     padding: 0 0 0 10%;
     
